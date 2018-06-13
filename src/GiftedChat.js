@@ -303,11 +303,11 @@ class GiftedChat extends React.Component {
 
 
   renderMessages() {
-    const AnimatedView = this.props.isAnimated === true ? Animated.View : View;
     return (
-      <AnimatedView
+      <View
         style={{
-          height: this.state.messagesContainerHeight,
+          height: '100%',
+          paddingBottom: this.props.minInputToolbarHeight + 10
         }}
       >
         <MessageContainer
@@ -318,7 +318,7 @@ class GiftedChat extends React.Component {
 
         />
         {this.renderChatFooter()}
-      </AnimatedView>
+      </View>
     );
   }
 
