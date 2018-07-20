@@ -307,7 +307,8 @@ class GiftedChat extends React.Component {
       <View
         style={{
           height: '100%',
-          paddingBottom: this.props.minInputToolbarHeight + 10
+          flex: 1,
+          position: 'relative',
         }}
       >
         <MessageContainer
